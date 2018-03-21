@@ -1,13 +1,9 @@
 - ## Get Started
     - [Introduction](/docs/{{version}}/introduction)
-
-- ## Prerequisites
-    - [Vue](/docs/{{version}}/vue)
-    - [GraphQl](/docs/{{version}}/graphql)
-    - [Storefront API](/docs/{{version}}/storefront)
-
-- ## Installation
-    - [Installation](/docs/{{version}}/installation)    
+    - [Prerequisites](/docs/{{version}}/prerequisites)
+    - [Installation](/docs/{{version}}/installation)
+    - [Contribution Guides](/docs/{{version}}/contribution)
+    - [Release Notes](/docs/{{version}}/release)
 
 - ## Basics
     - [Views](/docs/{{version}}/views)
