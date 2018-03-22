@@ -42,16 +42,16 @@ This is a [link](#). Lorem ipsum dolor sit amet, consectetur adipisicing elit. U
 
 <a name="code"></a>
 ## Code
-Lorem ipsum dolor sit amet, consectetur adipisicing elit. `This is inline code` Obcaecati eveniet accusantium libero iure eius cumque quia veritatis eum at aliquam necessitatibus, porro praesentium doloremque molestiae, error soluta excepturi, temporibus reprehenderit.
+Lorem ipsum dolor sit amet. `This is inline code` Obcaecati eveniet accusantium libero iure eius cumque quia veritatis eum at aliquam necessitatibus, porro praesentium doloremque molestiae, error soluta excepturi, temporibus reprehenderit.
 ```
-    public function store(Request $request) {
-        $post = Post::create('posts', [
-            'name' => $request->name,
-            'description' => $request->description
-        ]);
+public function store(Request $request) {
+    $post = Post::create('posts', [
+        'name' => $request->name,
+        'description' => $request->description
+    ]);
 
-        return $post;
-    }
+    return $post;
+}
 ```
 
 <a name="image"></a>
