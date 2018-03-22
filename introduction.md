@@ -20,7 +20,7 @@ If you are building a commercial project you need to [buy a license](#license).
 <a name="issues"></a>
 ## Issues with Shopify development
 
-<a name="themekti"></a>
+<a name="themekit"></a>
 ### Themekit
 You have to maintain a connection between your local development environment and Shopify. This is done using [Themekit](https://shopify.github.io/themekit/). Everytime you make changes to your theme, Themekit will upload the changes. This process can take a few seconds. This is enough to break your flow and can create a frustrating developer experience.
 
