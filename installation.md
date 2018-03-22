@@ -57,7 +57,9 @@ Lorem ipsum dolor sit amet, consectetur adipisicing elit. `This is inline code` 
 <a name="image"></a>
 ## Image
 Lorem ipsum dolor sit amet, consectetur adipisicing elit. Obcaecati eveniet accusantium libero iure eius cumque quia veritatis eum at aliquam necessitatibus, porro praesentium doloremque molestiae, error soluta excepturi, temporibus reprehenderit.
+
 ![alt text](/images/logo.png "Logo Title Text 1")
+
 Lorem ipsum dolor sit amet, consectetur adipisicing elit. Iusto rerum rem molestiae. Voluptatem optio nesciunt mollitia, iste, ab iure libero distinctio alias in ratione odit fuga amet consectetur culpa, beatae!
 
 <a name="blockquote"></a>
