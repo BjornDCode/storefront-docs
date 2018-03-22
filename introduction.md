@@ -1,6 +1,8 @@
 # Introduction
 
-Storefront is a Javascript library for making front ends for Shopify websites. [Shopify](https://www.shopify.com/) is a great tool to manage and run your webshop. The traditional way of building a Shopify website is by creating a theme. But when creating Shopify themes there are some downsides. Storefront aims to overcome these issues and create a smooth developer experience while still producing great end results. If you are building a commercial project you need to [buy a license](#).
+Storefront is a Javascript library for making front ends for Shopify websites. [Shopify](https://www.shopify.com/) is a great tool to manage and run your webshop. The traditional way of building a Shopify website is by creating a theme. But when creating Shopify themes there are some downsides. Storefront aims to overcome these issues and create a smooth developer experience while still producing great end results.
+
+If you are building a commercial project you need to [buy a license](#).
 
 ## Issues with Shopify development
 
