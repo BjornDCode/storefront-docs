@@ -17,19 +17,19 @@
 Lorem ipsum dolor sit amet, consectetur adipisicing elit. Vel impedit, atque ratione fugit nesciunt ullam cupiditate eaque saepe. Perspiciatis dolor maxime cupiditate illo, dolorem quos ex optio, possimus ab consectetur.
 
 <a name="header3"></a>
-## Header 3
+### Header 3
 Lorem ipsum dolor sit amet, consectetur adipisicing elit. Vel impedit, atque ratione fugit nesciunt ullam cupiditate eaque saepe. Perspiciatis dolor maxime cupiditate illo, dolorem quos ex optio, possimus ab consectetur.
 
 <a name="header4"></a>
-## Header 4
+#### Header 4
 Lorem ipsum dolor sit amet, consectetur adipisicing elit. Vel impedit, atque ratione fugit nesciunt ullam cupiditate eaque saepe. Perspiciatis dolor maxime cupiditate illo, dolorem quos ex optio, possimus ab consectetur.
 
 <a name="header5"></a>
-## Header 5
+##### Header 5
 Lorem ipsum dolor sit amet, consectetur adipisicing elit. Vel impedit, atque ratione fugit nesciunt ullam cupiditate eaque saepe. Perspiciatis dolor maxime cupiditate illo, dolorem quos ex optio, possimus ab consectetur.
 
 <a name="header6"></a>
-## Header 6
+###### Header 6
 Lorem ipsum dolor sit amet, consectetur adipisicing elit. Vel impedit, atque ratione fugit nesciunt ullam cupiditate eaque saepe. Perspiciatis dolor maxime cupiditate illo, dolorem quos ex optio, possimus ab consectetur.
 
 <a name="section"></a>
