@@ -6,7 +6,6 @@
 - [Header 4](#header4)
 - [Header 5](#header5)
 - [Header 5](#header5)
-- [Header 6](#header6)
 - [Section](#section)
 - [Code](#code)
 - [Image](#image)
@@ -26,10 +25,6 @@ Lorem ipsum dolor sit amet, consectetur adipisicing elit. Vel impedit, atque rat
 
 <a name="header5"></a>
 ##### Header 5
-Lorem ipsum dolor sit amet, consectetur adipisicing elit. Vel impedit, atque ratione fugit nesciunt ullam cupiditate eaque saepe. Perspiciatis dolor maxime cupiditate illo, dolorem quos ex optio, possimus ab consectetur.
-
-<a name="header6"></a>
-###### Header 6
 Lorem ipsum dolor sit amet, consectetur adipisicing elit. Vel impedit, atque ratione fugit nesciunt ullam cupiditate eaque saepe. Perspiciatis dolor maxime cupiditate illo, dolorem quos ex optio, possimus ab consectetur.
 
 <a name="section"></a>
