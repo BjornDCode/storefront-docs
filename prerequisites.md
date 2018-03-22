@@ -31,7 +31,7 @@ In this example we have a `Card` component. The `Card` consists of an image and 
         <div class="card--content">
             <h3>A title goes here</h3>
             <p>
-                Lorem ipsum dolor sit amet, consectetur adipisicing elit. Adipisci animi rerum, recusandae amet. Culpa in vero iure, asperiores quo accusamus voluptatibus corrupti debitis numquam amet aspernatur voluptas! Numquam doloremque, mollitia.
+                Lorem ipsum dolor sit amet...
             </p>
         </div>
     </div>
@@ -72,7 +72,7 @@ Now when we use the `Card` component we will give it some data.
 <card
     image="http://via.placeholder.com/500x500"
     title="A title goes here"
-    content="Lorem ipsum dolor sit amet, consectetur adipisicing elit. Adipisci animi rerum, recusandae amet. Culpa in vero iure, asperiores quo accusamus voluptatibus corrupti debitis numquam amet aspernatur voluptas! Numquam doloremque, mollitia."
+    content="Lorem ipsum dolor sit amet..."
 >
 </card
 ```
@@ -101,18 +101,18 @@ Now whenever we use the `Card` component we can decide what goes into each slot.
     <h2 slot="title">Our new title goes here</h2>
     <div slot="content">
         <p>
-            Lorem ipsum dolor sit amet, consectetur adipisicing elit. Deleniti esse ipsum ad veritatis non rerum tempora harum delectus possimus culpa ex illo, aspernatur reiciendis velit necessitatibus, hic, cum. Saepe, nihil.
+            Lorem ipsum dolor sit amet...
         </p>
         <h4>We have more content in this card</h4>
         <p>
-            Lorem ipsum dolor sit amet, consectetur adipisicing elit. Assumenda corrupti itaque repudiandae at tempore voluptates commodi, earum, aliquam facere officia dolore amet reprehenderit. Ut obcaecati quia, earum facere ad soluta.
+            Lorem ipsum dolor sit amet...
         </p>
     </div>
 </card>
 ```
 
-As you can see this gives us quite a lot of flexibility when it comes to customizing components.
- 
+As you can see this gives us quite a lot of flexibility when it comes to customizing components. 
+
 
 <a name="router"></a>
 ### Router
