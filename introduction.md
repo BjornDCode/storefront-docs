@@ -1,6 +1,6 @@
 # Introduction
 
-Storefront is a Javascript library for making front ends for Shopify websites. [Shopify](https://www.shopify.com/) is a great tool to manage and run your webshop. The traditional way of building a Shopify website is by creating a theme. But when creating Shopify themes there are some downsides. Storefront aims to overcome these issues and create a smooth developer experience while still producing great end results. 
+Storefront is a Javascript library for making front ends for Shopify websites. [Shopify](https://www.shopify.com/) is a great tool to manage and run your webshop. The traditional way of building a Shopify website is by creating a theme. But when creating Shopify themes there are some downsides. Storefront aims to overcome these issues and create a smooth developer experience while still producing great end results. If you are building a commercial project you need to [buy a license](#).
 
 ## Issues with Shopify development
 
@@ -32,7 +32,7 @@ Storefront decouples the backend from the front end. You will still handle every
 
 Apollo handles all contact with the Shopify API. It automatically handles errors, loading states and caching of content. 
 
-The Storefront API is a [GraphQL](https://graphql.org/) API. This makes it possible to only grab the data that is absolutely needed, resulting in smaller queries. You don't need to know much about GraqhQl to use Storefront. 
+The Storefront API is a [GraphQL](https://graphql.org/) API. This makes it possible to only grab the data that is absolutely needed, resulting in smaller queries. You don't need to know much about GraqhQL to use Storefront. 
 
 Storefront also comes with pre-built components. This components can be modified as needed by you or plugged straight into your project.
 
