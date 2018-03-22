@@ -21,7 +21,7 @@ A more advanced feature of Vue is [slots](https://vuejs.org/v2/guide/components.
 
 The basics of slots is that it's a placeholder in your component, you can then modify when you use the component. Why is this useful? Well, let's look at an example. 
 
-In this example we have a `Card` component. The `Card` consists of an image and some text. 
+In this example we have a `Card` component. The `Card` consists of an image, a title and some text. 
 ```
 <template>
     <div class="card">
@@ -37,14 +37,14 @@ In this example we have a `Card` component. The `Card` consists of an image and 
     </div>
 </template
 ```
-And it can be used like this
+
+And it can be used like this:
 ```
 <card></card>
 ```
+But now all the content is static. If we ever want to use the `Card` component in another place in our app, we would have to create an `AlternativeCard` component. This doesn't scale very well.
 
-But now all the content is static. If we ever want to use the `Card` component in another place in our app, we would have to create an `AlternativeCard` component. 
-
-This doesn't scale very well though. So let's instead make our `Card` dynamic.
+Let's instead make our `Card` component dynamic.
 ```
 <template>
     <div class="card">
@@ -52,10 +52,8 @@ This doesn't scale very well though. So let's instead make our `Card` dynamic.
             <img :src="image" />
         </div>
         <div class="card--content">
-            <h3>{{ title }}</h3>
-            <p>
-                {{ content }}
-            </p>
+            <h3 v-text="title"></h3>
+            <p v-text="content"></p>
         </div>
     </div>
 </template
@@ -77,7 +75,7 @@ Now when we use the `Card` component we will give it some data.
 </card
 ```
 
-This is definitly an improvement, but it's not perfect. First of all then it feels awkward to pass an entire paragraph as a prop to the component. But it also limits us quite a bit. What if we don't want to output all our content in a `<p>` tag? And what if we want to use other tags like headings, blockquotes etc.
+This is definitly an improvement, but it's not perfect. The first issue is that it's awkward to pass an entire paragraph as a prop to the component. But it also limits us quite a bit. What if we don't want to output all our content in a `<p>` tag? And what if we want to use other tags like headings, blockquotes etc.?
 
 This is where slots come in. Let's do a final refactor of the `Card` component. 
 ```
@@ -97,7 +95,10 @@ This is where slots come in. Let's do a final refactor of the `Card` component.
 Now whenever we use the `Card` component we can decide what goes into each slot.
 ```
 <card>
-    <img src="http://via.placeholder.com/500x500" slot="image" />
+    <img 
+        src="http://via.placeholder.com/500x500" 
+        slot="image" 
+    />
     <h2 slot="title">Our new title goes here</h2>
     <div slot="content">
         <p>
@@ -112,6 +113,28 @@ Now whenever we use the `Card` component we can decide what goes into each slot.
 ```
 
 As you can see this gives us quite a lot of flexibility when it comes to customizing components. 
+
+If you only have one slot you don't have to name it.
+```
+<template>
+    <div class="card">
+        <slot></slot>
+    </div>
+</template
+```
+```
+<card>
+    <div class="card--image">
+        <slot name="image"></slot>
+    </div>
+    <div class="card--content">
+        <slot name="title"></slot>
+        <slot name="content"></slot>
+    </div>
+</card
+```
+
+#### Scoped Slots
 
 
 <a name="router"></a>
