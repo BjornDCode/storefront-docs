@@ -96,8 +96,8 @@ Now whenever we use the `Card` component we can decide what goes into each slot.
 ```
 <card>
     <img 
-        src="http://via.placeholder.com/500x500" 
         slot="image" 
+        src="http://via.placeholder.com/500x500" 
     />
     <h2 slot="title">Our new title goes here</h2>
     <div slot="content">
@@ -114,7 +114,7 @@ Now whenever we use the `Card` component we can decide what goes into each slot.
 
 As you can see this gives us quite a lot of flexibility when it comes to customizing components. 
 
-If you only have one slot you don't have to name it.
+If you only have one slot you don't have to name it:
 ```
 <template>
     <div class="card">
@@ -124,14 +124,16 @@ If you only have one slot you don't have to name it.
 ```
 ```
 <card>
-    <div class="card--image">
-        <slot name="image"></slot>
+   <div class="card--image">
+        <img src="http://via.placeholder.com/500x500" />
     </div>
     <div class="card--content">
-        <slot name="title"></slot>
-        <slot name="content"></slot>
+        <h3>A title goes here</h3>
+        <p>
+            Lorem ipsum dolor sit amet...
+        </p>
     </div>
-</card
+</card>
 ```
 
 #### Scoped Slots
