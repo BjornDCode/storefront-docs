@@ -19,6 +19,7 @@ Here's a small example of a component that fetches a list of products from Shopi
         <ul v-if="products">
             <li v-for="product in products" v-text="product.title"></li>
         </ul>
+
     </div>
 </template>
 
@@ -36,8 +37,8 @@ Here's a small example of a component that fetches a list of products from Shopi
     }
 </script>
 ```
-As mentioned earlier, `vue-apollo` handles load, error and success states. In our component we have acces to the `$apollo` object, where we can check it it's actively loading. 
+As mentioned earlier, `vue-apollo` handles load, error and success states. In our component we have acces to the `$apollo` object, where we can check if it's actively loading. 
 
-In our script we have defined a query for products. The `GET_PRODUCTS` constant is a GraphQL query as described in the [GraphQL section](/docs/{{version}}/graphql). When data is return it will automatically be populated into the `products` variable, and can be used in our component. 
+In our script we have defined a query for products. The `GET_PRODUCTS` constant is a GraphQL query as described in the [GraphQL section](/docs/{{version}}/graphql). When data is returned it will automatically be populated into the `products` variable, and can be used in our component. 
 
 This is a slightly simplified example but this is the basic idea of how `vue-apollo` works. 
