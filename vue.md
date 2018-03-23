@@ -1,11 +1,7 @@
-# Prerequisites
-
-- [Vue](#vue)
-    - [Slots](#slots)
-    - [Router](#router)
-- [GraphQL](#graphql)
-- [Shopify](#shopify)
-- [Storefront API](#storefront)
+# Vue
+- [Slots](#slots)
+- [Scoped Slots](#scoped-slots)
+- [Router](#router)
 
 <a name="vue"></a>
 ## Vue
@@ -35,7 +31,7 @@ In this example we have a `Card` component. The `Card` consists of an image, a t
             </p>
         </div>
     </div>
-</template
+</template>
 ```
 
 And it can be used like this:
@@ -56,7 +52,7 @@ Let's instead make our `Card` component dynamic.
             <p v-text="content"></p>
         </div>
     </div>
-</template
+</template>
 
 <script>
     export default {
@@ -120,7 +116,7 @@ If you only have one slot you don't have to name it:
     <div class="card">
         <slot></slot>
     </div>
-</template
+</template>
 ```
 ```
 <card>
@@ -135,9 +131,10 @@ If you only have one slot you don't have to name it:
     </div>
 </card>
 ```
-
-#### Scoped Slots
-
+<a name="scoped-slots"></a>
+### Scoped Slots
+!!! Does not belong here !!!
+Storefront uses Shopify as a backend. 
 
 <a name="router"></a>
 ### Router

@@ -1,8 +1,13 @@
+- ## Prerequisites
+    - [Vue](/docs/{{version}}/vue)
+    - [GraphQL](/docs/{{version}}/graphql)
+    - [Apollo](/docs/{{version}}/apollo)
+    - [Shopify](/docs/{{version}}/shopify)
+
 - ## Get Started
     - [Introduction](/docs/{{version}}/introduction)
-    - [Prerequisites](/docs/{{version}}/prerequisites)
     - [Installation](/docs/{{version}}/installation)
-    - [Contribution Guides](/docs/{{version}}/contribution)
+    - [Contribution Guide](/docs/{{version}}/contribution)
     - [Release Notes](/docs/{{version}}/release)
 
 - ## Basics
