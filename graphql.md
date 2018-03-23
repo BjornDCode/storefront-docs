@@ -1,5 +1,5 @@
 # GraphQL
-[GrapQL](https://graphql.org/) is a modern way to query data. To work with GraphQL you need two things: A GraphQL server (which Shopify provide), and a client to query the API. 
+[GraphQL](https://graphql.org/) is a modern way to query data. To work with GraphQL you need two things: A GraphQL server (which Shopify provide), and a client to query the API. 
 
 > GraphQL is a query language for APIs and a runtime for fulfilling those queries with your existing data. GraphQL provides a complete and understandable description of the data in your API, gives clients the power to ask for exactly what they need and nothing more, makes it easier to evolve APIs over time, and enables powerful developer tools.
 
@@ -40,9 +40,7 @@ Another powerful feature of GraphQL is that you can get many resources in a sing
 Let's take another example:
 With a normal REST API it's common that you have to hit multiple endpoints to get all the data you need. Let's say you want some information about a shop, but also a list of products. You would hit a `/shop` endpoint to get information about the shop, and after that request is finished you would hit a `/products` endpoint to get the list of products. 
 
-With GraphQL you can do it all in one query. 
-
-Let's have another look at our example from earlier:
+With GraphQL you can do it all in one query:
 ```
 {
     shop {
