@@ -262,5 +262,41 @@ We can use the 'slot-scope' property to access the props that were defined on th
 
 <a name="router"></a>
 ### Router
-Router
+It's common to simply use Vue to create simple components and use them where needed in a server-side rendered application. But you can also use Vue to create a Single Page Application. 
 
+To handle routing you can use [vue-router](https://router.vuejs.org/en/). `vue-router` allows you to define routes, and define components that should be loaded when those routes are accessed. 
+
+Let's look at an example:
+```
+const routes = [
+    { path: '/', component: HomeView },   
+    { path: '/about', component: AboutView },   
+    { path: '/contact', component: ContactView }   
+]
+
+const router = new VueRouter({
+    routes
+})
+
+const app = new Vue({
+    router
+})
+```
+This is the very basics of how you set up `vue-router`. What's interesting is the `routes` array storing every route. Each route is an object where you define a path and a component to show. 
+
+To use these routes you can do something like this:
+```
+<template>
+    <div class="app">
+        <nav>
+            <router-link to="/"> Home </router-link>
+            <router-link to="/about"> About </router-link>
+            <router-link to="/contact"> Contact </router-link>
+        </nav>
+        <main>
+            <router-view></router-view>
+        </main>
+    </div>
+</template>
+```
+`<router-link>` is a component from `vue-router` that allows you to link to your defined routes. When a route is accessed, the specified component is then rendered in `router-view`. 
