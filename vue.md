@@ -13,7 +13,9 @@ A simple Vue component could look like this:
 ```
 <template>
     <div class="hamburger-nav">
-        <button class="toggle-nav" @click="toggleNav">Menu</button>
+        <button class="toggle-nav" @click="toggleNav">
+            Menu
+        </button>
         <nav v-if="visible">
             <a href="/home">Home</a>
             <a href="/about">About</a>
@@ -45,23 +47,25 @@ A simple Vue component could look like this:
     }
 </style>
 ```
-There's a lot going on here. So let's break it down step by step.
+There's a lot going on here. Let's break it down step by step.
 
 First we can see that the component is broken in to 3 main parts. A template, a script and styles. The template is where we define our markup. The script is where we write our Javascript. Styles are where we write our CSS. Pretty simple, right? Now in this example we are using all three parts, but this is absolutely not required. You can have a component that simply consists of a template, or a component that is only a script.
 
-In our template we have simple HTML. But there are some new concepts. On the button we have this attribute: `@click="toggleNav"`. This is Vue's way of adding event listeners. So all this code is doing is add a click event listener to the button. And when the button is clicked then call the `toggleNav` method. 
+In our template we have simple HTML. But there are some new concepts. On the `<button>` we have this attribute: `@click="toggleNav"`. This is Vue's way of adding event listeners. All this code is doing is add a click event listener to the `<button>`. And when the `<button>` is clicked then call the `toggleNav` method. 
 
-This method is defined in our script, inside the 'methods' object. We can see that this method updates a variable `this.visible`. This variable is defined in the `data` method. The data method returns an object of data that is available inside the component. So where do we use this data? In our template, on our `<nav>` element we have another new attribute. The `v-if` directive. This directive allows you to control whether an element should be visible. In our example we are using the `visible` variable. That means that if `visible = true`, then our component will be shown. 
+This method is defined in our script, inside the 'methods' object. This method updates a variable called `this.visible`. This variable is defined in the `data` method. The data method returns an object of data that is available inside the component.
 
-The last thing to understand is that whenever the `visible` variable is updated, the template will automatically re-render. So when we call the `toggleNav` method and update the `visible` state, the component will automatically register this change, and update accordingly. This is called 'reactivity' and is a core concept to understand.
+On our `<nav>` element we have another new attribute. The `v-if` directive. This directive allows you to control whether an element should be visible. In our example we are using the `visible` variable. That means that if `visible = true`, our component will be shown. 
 
-This is a simple example but there are more things to know about Vue. I recommend taking a look at the [documentation]((https://vuejs.org/v2/guide/)).
+The last thing to understand is that whenever the `visible` variable is updated, the template will automatically re-render. When we call `toggleNav` and update `visible`, the component will automatically register this change, and update accordingly. This is called 'reactivity' and is a core concept to understand in Vue.
+
+This is a simple example but there are more things to know about Vue. I recommend taking a look at the [documentation](https://vuejs.org/v2/guide/).
 
 <a name="slots"></a>
 ### Slots
 A more advanced feature of Vue is [slots](https://vuejs.org/v2/guide/components.html#Content-Distribution-with-Slots). Understanding how to use slots is important since Storefront use them quite a lot. 
 
-The basics of slots is that it's a placeholder in your component, you can then modify when you use the component. Why is this useful? Well, let's look at an example. 
+The basics of slots is that it's a placeholder in your component. You can modify this placeholder when you use the component. Why is this useful? Well, let's look at an example. 
 
 In this example we have a `Card` component. The `Card` consists of an image, a title and some text. 
 ```
