@@ -68,7 +68,7 @@ Now when we use the `Card` component we will give it some data.
     title="A title goes here"
     content="Lorem ipsum dolor sit amet..."
 >
-</card
+</card>
 ```
 
 This is definitly an improvement, but it's not perfect. The first issue is that it's awkward to pass an entire paragraph as a prop to the component. But it also limits us quite a bit. What if we don't want to output all our content in a `<p>` tag? And what if we want to use other tags like headings, blockquotes etc.?
@@ -85,7 +85,7 @@ This is where slots come in. Let's do a final refactor of the `Card` component.
             <slot name="content"></slot>
         </div>
     </div>
-</template
+</template>
 ```
 
 Now whenever we use the `Card` component we can decide what goes into each slot.
@@ -133,8 +133,78 @@ If you only have one slot you don't have to name it:
 ```
 <a name="scoped-slots"></a>
 ### Scoped Slots
-!!! Does not belong here !!!
-Storefront uses Shopify as a backend. 
+Scoped slots are a certain type of slot where you pass data from the child component to the parent component. Let's have an example to illustrate it. We'll continue using our `Card` component.
+
+In this example each component will have a 'Dismiss' button that will hide the component.
+```
+<template>
+    <div class="card" v-if="visible">
+        <slot></slot>
+        <button @click="hide">Dismiss</button>
+    </div>
+</template>
+
+<script>
+    methods: {
+        data() {
+            return {
+                visible: true
+            }
+        },
+
+        hide() {
+            this.visible = false;
+        }
+    }
+</script>
+```
+A few things have changed now. We introduced a data variable that controls whether the component is visible. We alse created a method that can toggle this variable. 
+Lastly we added a button that will trigger the 'hide' method.
+
+But now we've run into the same issue we had earlier when figuring out the markup of the component. What happens if we want the 'Dismiss' button above the content in some components? Or if we want the button to be a small 'x' in the top corner? Or if we want another text?
+
+So once again it would be easier if we could handle it from the parent component. But one major thing has changed this time. We don't want to recreate the 'hide' method and 'visible' variable in each parent component. We still want `Card` to be responsible for this. 
+
+That's where scoped slots come in. It allows us to pass data from the child component to the parent component. In our example it would look something like this:
+```
+<template>
+    <div class="card" v-if="visible">
+        <slot hide="hide"></slot>
+    </div>
+</template>
+
+<script>
+    methods: {
+        data() {
+            return {
+                visible: true
+            }
+        },
+
+        hide() {
+            this.visible = false;
+        }
+    }
+</script>
+```
+What we've done here is simply pass the hide function as a prop to the slot. Now we can use it like this:
+```
+<card>
+    <div slot-scope="props">
+        <div class="card--image">
+            <img src="http://via.placeholder.com/500x500" />
+        </div>
+        <div class="card--content">
+            <h3>A title goes here</h3>
+            <p>
+                Lorem ipsum dolor sit amet...
+            </p>
+        </div>
+        <button @click="props.hide"></button>
+    </div>
+</card>
+```
+Now we have complete control over how the component can be hidden. It's not only methods you can pass through to the parent component. It could just as easily be a some data or a computed property.
 
 <a name="router"></a>
 ### Router
