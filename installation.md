@@ -21,14 +21,23 @@ If you prefer another dataset you can [download](https://www.shopify.com/partner
 
 <a name="available-for-api"></a>
 ### Making products available for the API
-By default your products won't be available to be accessed through the API. 
+By default your products won't be available to be accessed through the API. If you go to 'Products' in the Shopify backend, you will see a message underneath each product saying it's 'unavailable in <private app>'.
 
-If you go to 'Products' in the Shopify backend, you will see that all products are unavailable in your private app. If you go into a product and click on 'Manage Sales Channels', you can now check the private app.
+#### Make a single product available
+1. Click on 'Products'
+2. Click on the product
+3. Check off your private app
+4. Click 'Done'
 
-This is cumbersome to do for every single product. On the 'Products' page you can filter products by availability in the private app. Do this by selecting 'Filter' > 'Availability' > 'unavailable on <private app>'. Now you can bulk select all products and click on 'Actions' > 'Make products available' and selecting the private app. 
+This is cumbersome to do for every single product, so instead you can buld edit your products.
+
+#### Make all products available
+1. Click on 'Products'
+2. Click on 'Filter' > 'Availability' > 'Unavailable on <private app>'
+3. Bulk select all products
+4. Click on Actions' > 'Make products available' and select your private app
 
 Now your Shopify Store is ready to use with Storefront. 
-
 If you want to test the API before setting up Storefront you can follow [these steps](https://help.shopify.com/api/storefront-api/getting-started#accessing-the-storefront-api-graphql-endpoint).
 
 <a name="installation"></a>
