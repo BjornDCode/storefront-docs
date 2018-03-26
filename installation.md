@@ -42,7 +42,24 @@ If you want to test the API before setting up Storefront you can follow [these s
 
 <a name="installation"></a>
 ## Installation
-Install
+You can install Storefront through NPM, alongside your other dependencies. The library itself has some dependencies that must be install though.
+
+- ```apollo-cache-inmemory```: A cache implementation for Apollo Client
+- ```apollo-cache-persist```: A library to cache data on endusers machines
+- ```apollo-client```: A library making it easy to work with GraphQL servers. See more [here](/docs/{{version}}/apollo).
+- ```apollo-link```: A network interface for Apollo Client.
+- ```apollo-link-http```: An HTTP implementation of ```apollo-link```
+- ```graphql```: A Javascript reference implementation of GraphQL
+- ```graphql-tag```: A set of utilities to make GraphQL queries
+- ```siema```: A small Javascript slider that is used in the Product Image components
+- ```vue-apollo```: A Vue implementation of Apollo Client
+- ```vue```: A Javascript framework, that Storefront is built upon.
+
+Most of these dependencies you don't have to worry about. Read the [prerequisites](/docs/{{version}}/vue) for the things that are recommended to know in order to work with Storefront.
+
+```
+npm install --save vue-storefront apollo-cache-inmemory apollo-cache-persist apollo-client apollo-link apollo-link-http graphql graphql-tag siema vue-apollo vue
+```
 
 <a name="configuration"></a>
 ## Configuration
