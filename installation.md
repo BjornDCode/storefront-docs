@@ -100,7 +100,7 @@ persistor.then(() => {
 ```
 Link ```index.js``` in your index.html file and you are ready.
 
-<a name="option"></a>
+<a name="options"></a>
 ### Options
 When initialising Storefront, you must pass it an object of options. Here is a list of required and possible options:
 

@@ -7,9 +7,6 @@
 - ## Get Started
     - [Introduction](/docs/{{version}}/introduction)
     - [Installation](/docs/{{version}}/installation)
-    - [Terminology](/docs/{{version}}/terminology)
-    - [Contribution Guide](/docs/{{version}}/contribution)
-    - [Release Notes](/docs/{{version}}/release)
 
 - ## Basics
     - [Views](/docs/{{version}}/views)

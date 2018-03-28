@@ -6,9 +6,7 @@
 
 <a name="shopify"></a>
 ## Shopify
-Storefront uses [Shopify](https://www.shopify.com/) as a backend. It's a great tool to run and manage your webshop. It's not absolutely required that you know a lot about Shopify in order to start building a Storefront project. But there are a few basics that you should be aware of. 
-
-If you are new to Shopify I recommend taking a look at the [terminology](/docs/{{version}}/terminology) page to learn the basics of Shopify. 
+Storefront uses [Shopify](https://www.shopify.com/) as a backend. It's a great tool to run and manage your webshop. It's not absolutely required that you know a lot about Shopify in order to start building a Storefront project. But there are a few basics that you should be aware of. It's a good idea to have a look at the [documentation](https://help.shopify.com/api/storefront-api/reference) in order to understand the data you can get from Shopify.
 
 <a name="plans"></a>
 ### Plans
